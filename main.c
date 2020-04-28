@@ -1,6 +1,18 @@
 #include <stdio.h>
+#include "fonction.h"
+
+plateau p;
+
 
 int main(void) {
-  printf("Hello World\n");
+  //printf("HelloWorld");
+
+  srand(time(NULL));
+
+  initEmpty(&p, 12, 12);
+  printPlateau(&p, 12, 12);
+
+
+
   return 0;
 }
