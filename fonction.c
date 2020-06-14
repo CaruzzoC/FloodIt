@@ -160,13 +160,11 @@ int getArea(plateau *ptr, int lin, int col){
 void perturbate(plateau *ptr, plateau *aPerturber, int lin, int col, int nbColor, int prevArea){
   int actuArea = getArea(ptr, lin, col);
   int nbModif = prevArea - actuArea;
-  printf("nbModif : %i\t actuArea : %i\t prevArea : %i\n",nbModif, actuArea, prevArea);
   for (int i = 0; i < nbModif; i++){
     int l = rand() % lin;
     int c = rand() % col;
     int color = rand() % (nbColor) + 1;
     (*aPerturber).cases[l][c] = color;
-    printf("l : %i\tc : %i\tcolor : %i\n",l,c,color);
   }
 }
 

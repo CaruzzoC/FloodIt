@@ -30,5 +30,6 @@ bool initEmptyTest(plateau *ptr, int lin, int col, int nbColor);
 bool finTest(plateau *ptr, int lin, int col, bool fin);
 bool floodTest(plateau *ptr, plateau *ptr2, int lin, int col, int prevColor, int newColor);
 bool areaFloodTest(int ans, int res);
+bool perturbateTest(plateau *ptr, plateau *ptr2, int lin, int col, int caseModifie);
 
 #endif

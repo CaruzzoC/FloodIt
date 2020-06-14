@@ -89,3 +89,29 @@ bool areaFloodTest(int ans, int res){
     return false;
   }
 }
+
+/* PerturbateTest
+ *  Fonction de test de la fonction perturbate
+ *  
+ *  plateau *ptr - pointeur qui pointe vers le plateau/la matrice
+ *  plateau *ptr2 - pointeur qui pointe vers le plateau/la matrice
+ *  lin - nombre de lignes composant le plateau
+ *  col - nombre de lignes composant le plateau
+ *  caseModifie - delta surface
+*/
+bool perturbateTest(plateau *ptr, plateau *ptr2, int lin, int col, int caseModifie){
+  int cmpt;
+  for (int i = 0; i < lin; i++){
+    for (int j = 0; j < col; j++){
+      if ((*ptr).cases[i][j] != (*ptr2).cases[i][j]){
+        cmpt++;
+      }
+    }
+  }
+  if(cmpt == caseModifie){
+    return true;
+  }
+  else{
+    return false;
+  }
+}

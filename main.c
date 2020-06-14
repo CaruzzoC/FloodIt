@@ -13,22 +13,22 @@ int main(void) {
   srand(time(NULL));
   system("clear");
   //=====================Zone de Test==========================
-  /*
+  
   pRemplir.lin=2;
   pRemplir.col=2;
   pRemplir.cases[0][0] = 1;
   pRemplir.cases[0][1] = 1;
   pRemplir.cases[1][0] = 1;
   pRemplir.cases[1][1] = 2;
-  */
-  /*
+  
+  
   pTest.lin=2;
   pTest.col=2;
   pTest.cases[0][0] = 2;
   pTest.cases[0][1] = 2;
   pTest.cases[1][0] = 2;
   pTest.cases[1][1] = 2;
-  */
+  
 
   //printf("%i",floodTest(&pRemplir, &pTest, 2, 2, 1, 2));
 
@@ -39,6 +39,9 @@ int main(void) {
   //printf("%i",finTest(&p, 12, 12, fin(&p, 12, 12)));
   //printf("%i",initEmptyTest(&p, 12, 12, 6));
   //floodTest(plateau *ptr, int **plateau2, int lin, int col, int prevColor, int newColor);
+
+  perturbate(&pRemplir, &pRemplir, 2, 2, 2, 1);
+  printf("%i",perturbateTest(&pRemplir, &pRemplir, 2, 2, 1));
   //========================================================
 
 
@@ -48,7 +51,7 @@ int main(void) {
   //floodArea(&p, p.cases[0][0], 0, 0);
   //printf("%i",getArea(&p, 12, 2));
 
-
+  /*
   int size = 0;
   int nbColor = 0;
   printf("Taille du plateau (2-28): ");
@@ -68,7 +71,7 @@ int main(void) {
     nbColor = 2;
   }
   floodIt(&p, size, size, nbColor);
-
+  */
 
   return 0;
 }
